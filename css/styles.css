@@ -6,22 +6,24 @@ h1, h2, h3, .heading-text {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.site-footer {
-  background-image: linear-gradient(#f5f5f5, white);
-  padding: 20px 0;
-}
-
 .header-bg {
   margin: 0;
   padding: 10px;
-  background-image: linear-gradient(to right, #b6e69e,
-   #3c908e, #12664f);
-  color: white;
+  background-image: linear-gradient(to bottom, #3c908e, #12664F);
+  background-color: #3c908e;
+}
+
+.footer-bg {
+  margin: 0;
+  padding: 10px;
+  background-image: linear-gradient(to top, #3c908e, #12664F);
+  background-color: #3c908e;
 }
 
 .navbar {
-  background-color: #12664f;
+  background-color: #3c908e;
 }
+
 
 .tab-content {
   border: 1px solid #DDD;

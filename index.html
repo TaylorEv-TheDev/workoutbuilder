@@ -27,9 +27,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- NAVMENU -->
-        <div class="col-7 col-sm-10 col-lg-2 float-start" style="text-align: center;">
-          <img src="img/dumbbell.svg" style="height: 30px; width: 30px;">
-          <h1 class="navbar-brand" style="color: white;">Workout Builder</h1>
+        <div class="col-10 col-lg-2 ml-3 content-center" style="text-align: center;">
+          <div class="">
+            <img src="img/dumbbell.svg" class="mb-2" style="height: 30px; width: 30px;">
+            <h1 class="navbar-brand" style="color: white;">Workout Builder</h1>
+          </div>
         </div>
         <div class="collapse navbar-collapse" id="homeMenu" style="padding: 10px;">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -57,25 +59,58 @@
                 margin-left: 5px; margin-right: 5px;">
                 Match With A Trainer</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <button class="btn btn-light my-2 my-sm-0" type="login"> 
-                  <img src="img/profile-user.svg" style="height: 30px; width: 30px; 
-                  margin-left: 5px; margin-right: 5px;">
-                  Login/Sign Up</button>
-              </a>
-            </li>
           </ul>
+          <span class="navbar-text mx-auto mx-md-2">
+            <a role="button" class="btn btn-light my-2 my-sm-0"
+            data-toggle="modal" data-target="#loginModal"> 
+              Login/Sign Up</a>
+          </span>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
+      <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-light btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <!-- END OF NAVBAR-->
     </header>
     <!-- MAIN CAROUSEL -->
-    <div id="mainCarousel" class="carousel slide" data-ride="carousel" style="border: 3px solid #12664f;">
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel" style="border: 2px solid rgba(0, 0, 0, .8);">
       <ol class="carousel-indicators">
         <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#mainCarousel" data-slide-to="1"></li>
@@ -130,7 +165,7 @@
     <!-- HOW IT WORKS -->
     <!-- CORRECT: VERTICAL ALIGN TEXT IN ROWS-->
     <div style="background-image: url('/img/pexels-lee-catherine-collins-2652236.jpg'); background-size: cover;">
-      <div class="tint-layer" style="color: black; border: 3px solid #12664f;">
+      <div class="tint-layer" style="color: black; border: 2px solid rgba(0, 0, 0, .8);">
         <div class="row">
           <div class="col px-5 tint-layer" style="padding-top: 10px;">
             <h1>How It Works</h1>
@@ -248,17 +283,17 @@
     </div>
     <!-- END OF HOW IT WORKS -->
     </body>
-    <footer class="header-bg">
+    <footer class="footer-bg">
       <!-- ICON CREDITS-->
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-8 my-1 py-2">
+          <div class="col-12 col-sm-6 col-md-8 my-1 ml-3 py-2">
             <a href="#">
-              <img src="img/dumbbell.svg" style="height: 30px; width: 30x;">
+              <img src="img/dumbbell.svg" class="mb-2" style="height: 30px; width: 30x;">
               <span class="heading-text" style="color: white; font-size: 24px;">Workout Builder</span>
             </a>
           </div>
           <div class="col content-center pr-0">
-            <button class="btn btn-sm btn-light my-2">
+            <button class="btn btn-sm btn-light my-2" data-toggle="modal" data-target="#loginModal">
               Login/Sign Up
             </button>
           </div>
@@ -269,12 +304,12 @@
           </div>
         </div>
         <div class="row m-1"></div>
-          <div class="col heading-text content-center">
+          <div class="col heading-text content-center" style="color: white;">
             <h5>Contact Us</h5>
           </div>
         </div>
         <div class="row m-1">
-          <div class="col">
+          <div class="col" style="color: white;">
             <!-- PHONE -->
             <div class="row content-center">
               <img src="img/phone-call.svg"  style="height: 30px; width: 30px;">
@@ -283,16 +318,17 @@
               <p style="font-weight: bolder;">1-800-555-1234</p>
             </div>
           </div>
-          <div class="col">
+          <div class="col" style="color: white;">
             <!-- EMAIL -->
             <div class="row content-center">
               <img src="img/email.svg"  style="height: 30px; width: 30px;">
             </div>
             <div class="row content-center">
-              <p style="font-weight: bolder;">workoutbuilder@fakemail.com</p>
+              <span style="font-weight: bolder;">workoutbuilder</span>
+              <span style="font-weight: bolder;">@fakemail.com</span>
             </div>
           </div>
-          <div class="col">
+          <div class="col" style="color: white;">
             <!-- SOCIAL MEDIA -->
             <div class="row content-center">
               <a href="#"><img src="img/facebook.svg"  style="height: 30px; width: 30px;"></a>
