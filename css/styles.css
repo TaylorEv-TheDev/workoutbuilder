@@ -57,3 +57,39 @@ h1, h2, h3 {
   border: 1px solid #3c908e;
 }
 
+.content-img {
+  max-width: 75%;
+  height: auto;
+}
+
+.content- {
+  background-image: linear-gradient(to right, grey, #f5f5f5, white);
+}
+
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-center img {
+  margin: 0;
+}
+
+.tint-layer {
+  background-color: rgba(60, 144, 142, 0.5);
+}
+
+.row-content {
+  padding: 15px;
+}
+
+.light-textbg {
+  background-color:rgba(255,255, 255, 0.90);
+  height: 100%;
+}
+
+.light-textbg h2, p {
+  margin: 0;
+  padding: 10px;
+}

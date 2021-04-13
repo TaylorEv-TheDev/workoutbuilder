@@ -21,10 +21,12 @@
 
   <body>
     <header>
+      <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light header-bg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homeMenu" aria-controls="homeMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- NAVMENU -->
         <div class="col-7 col-sm-10 col-lg-2 float-start" style="text-align: center;">
           <img src="img/dumbbell.svg" style="height: 30px; width: 30px;">
           <h1 class="navbar-brand" style="color: white;">Workout Builder</h1>
@@ -70,40 +72,40 @@
           </form>
         </div>
       </nav>
+      <!-- END OF NAVBAR-->
     </header>
-    <!-- CAROUSEL -->
-    <!-- NEEDS CAPTIONS FIXED: Vert and horiz centered as viewports change.-->
-    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+    <!-- MAIN CAROUSEL -->
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#homeCarousel" data-slide-to="1"></li>
-        <li data-target="#homeCarousel" data-slide-to="2"></li>
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+        <li data-target="#mainCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner text-center" style="max-height: 400px;">
-        <div class="carousel-item active">
+        <div class="carousel-item active" style="max-height: 400px;">
           <a href="#">
-            <img class="d-block w-100" src="img/pexels-william-choquette-1954524.jpg">
-            <div class="carousel-caption d-md-block">
+            <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-william-choquette-1954524.jpg">
+            <div class="carousel-caption">
               <h5>Build A Workout</h5>
               <p>Take the guesswork out of fitness and easily make a workout plan. 
                 Target all muscle groups without cracking open a textbook.</p>
             </div>
           </a>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" style="max-height: 400px;">
           <a href="#">
-            <img class="d-block w-100" src="img/pexels-maarten-van-den-heuvel-4254902.jpg">
-            <div class="carousel-caption d-md-block">
+            <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-maarten-van-den-heuvel-4254902.jpg">
+            <div class="carousel-caption">
               <h5>Find A Gym</h5>
-              <p>Take the guesswork out of fitness and easily make a workout plan. 
-                Target all muscle groups without cracking open a textbook.</p>
+              <p>Take full advantage of state-of-the-art equipment while staying within your budget
+                 at a gym near you.</p>
             </div>
           </a>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" style="max-height: 400px;">
           <a href="#">
-            <img class="d-block w-100" src="img/pexels-julia-larson-6455823.jpg">
-            <div class="carousel-caption d-md-block">
+            <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-julia-larson-6455823.jpg">
+            <div class="carousel-caption">
               <h5>Match With A Trainer</h5>
               <p>Take the guesswork out of fitness and easily make a workout plan. 
                 Target all muscle groups without cracking open a textbook.</p>
@@ -111,11 +113,12 @@
           </a>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+      <!-- CAROUSEL CONTROLS-->
+      <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -123,16 +126,146 @@
 
       </div>
     </div>
-    <!-- END OF CAROUSEL -->
+    <!-- END OF MAIN CAROUSEL -->
+    <!-- HOW IT WORKS -->
+    <!-- CORRECT: VERTICAL ALIGN TEXT IN ROWS-->
+    <div style="background-image: url('/img/pexels-lee-catherine-collins-2652236.jpg'); background-size: cover;">
+      <div class="tint-layer" style="color: black;">
+        <div class="row">
+          <div class="col px-5" style="padding-top: 10px;">
+            <h1>How It Works</h1>
+          </div>
+        </div>
+        <div>
+          <div class="row row-content">
+            <div class="col-4 col-lg-3 content-center">
+              <img class="content-img d-block" src="img/start-line.svg" style="max-height: 200px;">
+            </div>
+            <div class="col">
+              <div class="d-block light-textbg">
+                <div style="text-align: left;">
+                  <h2>Build Your Workout</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
+                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
+                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
+                    ligula, non ultrices tellus sollicitudin et.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row row-content">
+            <div class="col">
+              <div class="d-block light-textbg">
+                <div style="text-align: right;">
+                  <h2>Make Your Schedule</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
+                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
+                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
+                  ligula, non ultrices tellus sollicitudin et.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-3 content-center">
+              <img class="content-img d-block" src="img/calendar.svg" style="max-height: 200px;">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row row-content">
+            <div class="col-4 col-lg-3 content-center">
+              <img class="content-img d-block" src="img/gym.svg" style="max-height: 200px;">
+            </div>
+            <div class="col">
+              <div class="d-block light-textbg">
+                <div style="text-align: left;">
+                  <h2>Choose Your Gym</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
+                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
+                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
+                    ligula, non ultrices tellus sollicitudin et.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row row-content">
+            <div class="col">
+              <div class="d-block light-textbg">
+                <div style="text-align: right;">
+                  <h2>Match With A Trainer</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
+                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
+                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
+                  ligula, non ultrices tellus sollicitudin et.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-3 content-center">
+              <img class="content-img d-block" src="img/coach.svg" style="max-height: 200px;">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row row-content">
+            <div class="col-4 col-lg-3 content-center">
+              <img class="content-img d-block" src="img/shoes.svg" style="max-height: 200px;">
+            </div>
+            <div class="col">
+              <div class="d-block light-textbg">
+                <div style="text-align: left;">
+                  <h2>Work Hard; Work Out Harder </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
+                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
+                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
+                    ligula, non ultrices tellus sollicitudin et.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row row-content">
+            <div class="col">
+              <div class="d-block light-textbg">
+                <div style="text-align: right;">
+                  <h2>Track Your Progress</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
+                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
+                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
+                  ligula, non ultrices tellus sollicitudin et.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-3 content-center">
+              <img class="content-img d-block" src="img/growth.svg" style="max-height: 200px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HOW IT WORKS -->
+    </body>
     <footer>
       Footer
+      <!-- ICON CREDITS-->
       <div>
-        <p class="footer-finePrint">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+        <p class="footer-finePrint">
+          Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+          Icons made by <a href="" title="bqlqn">bqlqn</a> 
+          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+          Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a>
+          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+          Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
+          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+          Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> 
           from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-          </br>Icons made by <a href="" title="bqlqn">bqlqn</a> 
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
         </p>
       </div>
+      <!-- END OF ICON CREDITS-->
     </footer>
 
   </body>
