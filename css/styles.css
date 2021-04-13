@@ -2,7 +2,7 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .heading-text {
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -13,7 +13,7 @@ h1, h2, h3 {
 
 .header-bg {
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   background-image: linear-gradient(to right, #b6e69e,
    #3c908e, #12664f);
   color: white;
@@ -78,6 +78,7 @@ h1, h2, h3 {
 
 .tint-layer {
   background-color: rgba(60, 144, 142, 0.5);
+  width: fit-content;
 }
 
 .row-content {
@@ -92,4 +93,8 @@ h1, h2, h3 {
 .light-textbg h2, p {
   margin: 0;
   padding: 10px;
+}
+
+.center-icon {
+  margin: 10px 50px 10px 0px;
 }
