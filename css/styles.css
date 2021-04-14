@@ -64,10 +64,6 @@ h1, h2, h3, .heading-text {
   height: auto;
 }
 
-.content- {
-  background-image: linear-gradient(to right, grey, #f5f5f5, white);
-}
-
 .content-center {
   display: flex;
   align-items: center;
@@ -99,4 +95,8 @@ h1, h2, h3, .heading-text {
 
 .center-icon {
   margin: 10px 50px 10px 0px;
+}
+
+.nav-tabs li {
+  background-image: linear-gradient(to bottom, #b6e69e, #fff, #fff, #fff);
 }
