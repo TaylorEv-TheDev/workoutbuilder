@@ -27,11 +27,6 @@ h1, h2, h3, .heading-text {
   font-size: xx-large;
 }
 
-.btn-light {
-  background-color: #b6e69e;
-  border: 1px solid #3c908e;
-}
-
 .carousel-caption {
   background-color: rgba(0,0, 0, 0.5);
 }
@@ -44,17 +39,6 @@ h1, h2, h3, .heading-text {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer-bg {
-  margin: 0;
-  padding: 10px;
-  /* background-image: linear-gradient(to top, #3c908e, #12664F); */
-  background-color: #f8f8f8;
-}
-
-.footer-finePrint{
-  font-size: 8px;
 }
 
 .header-logo {
@@ -114,4 +98,20 @@ h1, h2, h3, .heading-text {
 .light-textbg h2, p {
   margin: 0;
   padding: 10px;
+}
+
+.footer-bg {
+  margin: 0;
+  padding: 10px;
+  /* background-image: linear-gradient(to top, #3c908e, #12664F); */
+  background-color: #f8f8f8;
+}
+
+.footer-finePrint{
+  font-size: 8px;
+}
+
+.btn-light {
+  background-color: #b6e69e;
+  border: 1px solid #3c908e;
 }
