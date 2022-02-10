@@ -2,56 +2,10 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
-h1, h2, h3, .heading-text {
+.brand-title {
+  color: #3c908e;
   font-family: "Josefin Sans", sans-serif;
-}
-
-.header-bg {
-  margin: 0;
-  padding: 10px;
-  background-image: linear-gradient(to bottom, #3c908e, #12664F);
-  background-color: #3c908e;
-}
-
-.footer-bg {
-  margin: 0;
-  padding: 10px;
-  background-image: linear-gradient(to top, #3c908e, #12664F);
-  background-color: #3c908e;
-}
-
-.navbar {
-  background-color: #3c908e;
-}
-
-
-.tab-content {
-  border: 1px solid #DDD;
-  border-top: none;
-  padding: 10px;
-}
-
-.carousel-caption {
-  background-color: rgba(0,0, 0, 0.5);
-}
-
-.header-logo {
-  height: 75px;
-}
-
-.footer-finePrint{
-  font-size: 8px;
-}
-
-.header-subtitle {
-  font-size: 100%;
-}
-
-.text-center{
-  text-align: center;
-}
-.right {
-  float: right;
+  font-size: xx-large;
 }
 
 .btn-light {
@@ -59,9 +13,12 @@ h1, h2, h3, .heading-text {
   border: 1px solid #3c908e;
 }
 
-.content-img {
-  max-width: 75%;
-  height: auto;
+.carousel-caption {
+  background-color: rgba(0,0, 0, 0.5);
+}
+
+.center-icon {
+  margin: 10px 50px 10px 0px;
 }
 
 .content-center {
@@ -74,13 +31,39 @@ h1, h2, h3, .heading-text {
   margin: 0;
 }
 
-.tint-layer {
-  background-color: rgba(60, 144, 142, 0.5);
-  width: fit-content;
+.content-img {
+  max-width: 75%;
+  height: auto;
 }
 
-.row-content {
-  padding: 15px;
+.footer-bg {
+  margin: 0;
+  padding: 10px;
+  /* background-image: linear-gradient(to top, #3c908e, #12664F); */
+  background-color: #f8f8f8;
+}
+
+.footer-finePrint{
+  font-size: 8px;
+}
+
+.header-bg {
+  margin: 0;
+  padding: 10px;
+  /* background-image: linear-gradient(to bottom, #3c908e, #12664F); */
+  background-color: #f8f8f8;
+}
+
+.header-logo {
+  height: 75px;
+}
+
+.header-subtitle {
+  font-size: 100%;
+}
+
+h1, h2, h3, .heading-text {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .light-textbg {
@@ -93,10 +76,41 @@ h1, h2, h3, .heading-text {
   padding: 10px;
 }
 
-.center-icon {
-  margin: 10px 50px 10px 0px;
+.navbar {
+  background-color: #f8f8f8;
 }
 
 .nav-tabs li {
   background-image: linear-gradient(to bottom, #b6e69e, #fff, #fff, #fff);
+}
+
+.right {
+  float: right;
+}
+
+.row-content {
+  padding: 15px;
+}
+
+.tab-content {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.tint-layer {
+  background-color: rgba(60, 144, 142, 0.5);
+  width: fit-content;
 }
