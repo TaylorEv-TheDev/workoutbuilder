@@ -6,52 +6,28 @@ h1, h2, h3, .heading-text {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.navbar {
-  background-color: #f8f8f8;
-}
-
-.nav-tabs li {
-  background-image: linear-gradient(to bottom, #b6e69e, #fff, #fff, #fff);
-}
-
-.header-bg {
-  margin: 0;
-  padding: 10px;
-  /* background-image: linear-gradient(to bottom, #3c908e, #12664F); */
-  background-color: #f8f8f8;
-}
-
 .brand-title {
   color: #3c908e;
   font-family: "Josefin Sans", sans-serif;
   font-size: xx-large;
 }
 
-.carousel-caption {
-  background-color: rgba(0,0, 0, 0.5);
+.header-bg {
+  margin: 0;
+  padding: 10px;
+  background-color: #f8f8f8;
 }
 
-.center-icon {
-  margin: 10px 50px 10px 0px;
+.footer-bg {
+  margin: 0;
+  padding: 10px;
+  background-color: #f8f8f8;
 }
 
-.content-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navbar {
+  background-color: #f8f8f8;
 }
 
-.header-logo {
-  height: 75px;
-}
-
-.header-subtitle {
-  font-size: 100%;
-}
-
-.right {
-  float: right;
-}
 
 .tab-content {
   border: 1px solid #DDD;
@@ -59,25 +35,37 @@ h1, h2, h3, .heading-text {
   padding: 10px;
 }
 
+.carousel-caption {
+  background-color: rgba(0,0, 0, 0.5);
+}
+
+.header-logo {
+  height: 75px;
+}
+
+.footer-finePrint{
+  font-size: 8px;
+}
+
+.header-subtitle {
+  font-size: 100%;
+}
+
 .text-center{
   text-align: center;
 }
-
-.text-right {
-  text-align: right;
+.right {
+  float: right;
 }
 
-.text-left {
-  text-align: left;
+.btn-light {
+  background-color: #b6e69e;
+  border: 1px solid #3c908e;
 }
 
-.tint-layer {
-  background-color: rgba(60, 144, 142, 0.5);
-  width: fit-content;
-}
-
-.row-content {
-  padding: 15px;
+.content-img {
+  max-width: 75%;
+  height: auto;
 }
 
 .content-center {
@@ -90,6 +78,15 @@ h1, h2, h3, .heading-text {
   margin: 0;
 }
 
+.tint-layer {
+  background-color: rgba(60, 144, 142, 0.5);
+  width: fit-content;
+}
+
+.row-content {
+  padding: 15px;
+}
+
 .light-textbg {
   background-color:rgba(255,255, 255, 0.90);
   height: 100%;
@@ -100,18 +97,10 @@ h1, h2, h3, .heading-text {
   padding: 10px;
 }
 
-.footer-bg {
-  margin: 0;
-  padding: 10px;
-  /* background-image: linear-gradient(to top, #3c908e, #12664F); */
-  background-color: #f8f8f8;
+.center-icon {
+  margin: 10px 50px 10px 0px;
 }
 
-.footer-finePrint{
-  font-size: 8px;
-}
-
-.btn-light {
-  background-color: #b6e69e;
-  border: 1px solid #3c908e;
+.nav-tabs li {
+  background-image: linear-gradient(to bottom, #b6e69e, #fff, #fff, #fff);
 }
