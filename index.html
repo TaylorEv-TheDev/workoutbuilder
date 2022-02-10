@@ -1,169 +1,182 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  
-    <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Additional CSS-->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>    
-  
-    <title>Workout Builder</title>
-  </head>
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <body>
-    <header>
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-light header-bg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homeMenu" aria-controls="homeMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- NAVMENU -->
-        <div class="col-10 col-lg-2 ml-3 content-center" style="text-align: center;">
-          <div class="">
-            <img src="img/dumbbell.svg" class="mb-2" style="height: 30px; width: 30px;">
-            <h1 class="navbar-brand" style="color: white;">Workout Builder</h1>
-          </div>
+  <!-- Additional CSS-->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+  <title>Workout Builder</title>
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light header-bg">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homeMenu"
+        aria-controls="homeMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- NAVBAR BRAND -->
+      <div class="col-10 col-lg-2 ml-3 content-center" style="text-align: center;">
+        <div class="">
+          <img src="img/dumbbell.svg" class="mb-2" style="height: 30px; width: 30px;">
+          <h1 class="navbar-brand" style="color: white;">Workout Builder</h1>
         </div>
-        <div class="collapse navbar-collapse" id="homeMenu" style="padding: 10px;">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link active" href="#" style="color: white;">
-                <img src="img/home.svg" style="height: 30px; width: 30px; 
+      </div>
+      <!-- NAV MENU -->
+      <div class="collapse navbar-collapse" id="homeMenu" style="padding: 10px;">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#" style="color: white;">
+              <img src="img/home.svg" style="height: 30px; width: 30px; 
                 margin-left: 5px; margin-right: 5px;">
-                Home</a>
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">
+              <img src="img/puzzle.svg" style="height: 30px; width: 30px; 
+                margin-left: 5px; margin-right: 5px;">
+              Build a Workout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">
+              <img src="img/map-pin.svg" style="height: 30px; width: 30px; 
+                margin-left: 5px; margin-right: 5px;">
+              Find A Gym</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">
+              <img src="img/handshake.svg" style="height: 30px; width: 30px; 
+                margin-left: 5px; margin-right: 5px;">
+              Match With A Trainer</a>
+          </li>
+        </ul>
+        <span class="navbar-text mx-auto mx-md-2">
+          <a role="button" class="btn btn-light my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login/Sign Up</a>
+        </span>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!--LOGIN MODAL-->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Welcome!</h3>
+            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+          </div>
+          <!--MODAL TABS MENU -->
+          <ul class="nav nav-tabs" id="tabContent">
+            <li class="nav-item ml-1">
+              <a class="nav-link active" aria-current="page" href="#login" data-bs-toggle="tab">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">
-                <img src="img/puzzle.svg" style="height: 30px; width: 30px; 
-                margin-left: 5px; margin-right: 5px;">
-                Build a Workout</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">
-                <img src="img/map-pin.svg" style="height: 30px; width: 30px; 
-                margin-left: 5px; margin-right: 5px;">
-                Find A Gym</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">
-                <img src="img/handshake.svg" style="height: 30px; width: 30px; 
-                margin-left: 5px; margin-right: 5px;">
-                Match With A Trainer</a>
+              <a class="nav-link" href="#sign-up" data-bs-toggle="tab">Sign Up</a>
             </li>
           </ul>
-          <span class="navbar-text mx-auto mx-md-2">
-            <a role="button" class="btn btn-light my-2 my-sm-0"
-            data-bs-toggle="modal" data-bs-target="#loginModal"> 
-              Login/Sign Up</a>
-          </span>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-      <!--LOGIN MODAL-->
-      <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Welcome!</h3>
-                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                </div>
-                <!--MODAL TABS MENU -->
-                <ul class="nav nav-tabs" id="tabContent">
-                  <li class="nav-item ml-1">
-                    <a class="nav-link active" aria-current="page" href="#login" data-bs-toggle="tab">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sign-up" data-bs-toggle="tab">Sign Up</a>
-                  </li>
-                </ul>
-                <!--END OF MODAL TAB MENU-->
-                <!--TAB PAGES-->
-                <!--CHANGE LINK COLORS-->
-                <div class="tab-content">
-                  <div class="tab-pane active" id="login">
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="loginEmail">Email address</label>
-                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="loginPassword">Password</label>
-                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox">
-                                            <label class="form-check-label"> Remember me</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer form-row mt-2">
-                                  <button type="button" class="btn btn-secondary btn-sm mr-3" 
-                                    data-bs-toggle="modal"data-bs-dismiss="modal" data-bs-target="#clientModal">Client Sign Up</button>
-                                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-bs-dismiss="modal">Cancel</button>
-                                  <button type="submit" class="btn btn-light btn-sm ml-1">Login</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="sign-up">
-                    <div class="modal-body">
-                      <div class="container-fluid">
-                          <form>
-                              <div class="form-row">
-                                  <div class="form-group col-12">
-                                      <label class="sr-only" for="loginEmail">Email address</label>
-                                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                  </div>
-                                  <div class="form-group col-12">
-                                      <label class="sr-only" for="setPassword">Set Password</label>
-                                      <input type="password" class="form-control form-control-sm" id="setPassword" placeholder="Set Password">
-                                  </div>
-                                  <div class="form-group col-12">
-                                    <label class="sr-only" for="repeatPassword">Repeat Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="repeatPassword" placeholder="Repeat Password">
-                                </div>
-                                <div class="col">
-                                  <div class="form-check">
-                                      <input class="form-check-input" type="checkbox">
-                                      <label class="form-check-label"> I agree to WorkoutBuilder's 
-                                        <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
-                                      </label>
-                                  </div>
-                              </div>
-                              </div>
-                              <div class="modal-footer form-row mt-2">
-                                <button type="button" class="btn btn-secondary btn-sm mr-3" 
-                                  data-bs-toggle="modal"data-bs-dismiss="modal" data-bs-target="#clientModal">Client Sign Up</button>
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-light btn-sm ml-1">Sign Up</button>
-                              </div>
-                          </form>
+          <!--END OF MODAL TAB MENU-->
+          <!--TAB PAGES-->
+          <!--CHANGE LINK COLORS-->
+          <div class="tab-content">
+            <div class="tab-pane active" id="login">
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label class="sr-only" for="loginEmail">Email address</label>
+                        <input type="email" class="form-control form-control-sm" id="loginEmail"
+                          placeholder="Enter email">
                       </div>
-                  </div>
-                  </div>
+                      <div class="form-group col-12">
+                        <label class="sr-only" for="loginPassword">Password</label>
+                        <input type="password" class="form-control form-control-sm" id="loginPassword"
+                          placeholder="Password">
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label"> Remember me</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer form-row mt-2">
+                      <button type="button" class="btn btn-secondary btn-sm mr-3" data-bs-toggle="modal"
+                        data-bs-dismiss="modal" data-bs-target="#clientModal">Client Sign Up</button>
+                      <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                        data-bs-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-light btn-sm ml-1">Login</button>
+                    </div>
+                  </form>
                 </div>
-                <!--END OF TAB CONTENTS-->
+              </div>
             </div>
+            <div class="tab-pane" id="sign-up">
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label class="sr-only" for="loginEmail">Email address</label>
+                        <input type="email" class="form-control form-control-sm" id="loginEmail"
+                          placeholder="Enter email">
+                      </div>
+                      <div class="form-group col-12">
+                        <label class="sr-only" for="setPassword">Set Password</label>
+                        <input type="password" class="form-control form-control-sm" id="setPassword"
+                          placeholder="Set Password">
+                      </div>
+                      <div class="form-group col-12">
+                        <label class="sr-only" for="repeatPassword">Repeat Password</label>
+                        <input type="password" class="form-control form-control-sm" id="repeatPassword"
+                          placeholder="Repeat Password">
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label"> I agree to WorkoutBuilder's
+                            <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer form-row mt-2">
+                      <button type="button" class="btn btn-secondary btn-sm mr-3" data-bs-toggle="modal"
+                        data-bs-dismiss="modal" data-bs-target="#clientModal">Client Sign Up</button>
+                      <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                        data-bs-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-light btn-sm ml-1">Sign Up</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END OF TAB CONTENTS-->
         </div>
+      </div>
     </div>
     <!--END OF LOGIN MODAL-->
     <!--AFFILIATE MODAL-->
@@ -176,8 +189,8 @@
           </div>
           <div class="modal-body">
             <div class="container-fluid">
-              <p style="text-align: center;">Call us now at 1-888-555-1234 or fill out this form to get in touch with a 
-                specialist. We'll answer any questions you have and help you set up your 
+              <p style="text-align: center;">Call us now at 1-888-555-1234 or fill out this form to get in touch with a
+                specialist. We'll answer any questions you have and help you set up your
                 account to start earning with WorkoutBuilder.</p>
               <form>
                 <div class="form-row">
@@ -220,13 +233,13 @@
                 <div class="form-row">
                   <div class="form-group col">
                     <label class="sr-only" for="comments">Commnets</label>
-                    <textarea class="form-control form-control-sm" id="comments" 
-                    placeholder="Comments" rows="5"></textarea>
+                    <textarea class="form-control form-control-sm" id="comments" placeholder="Comments"
+                      rows="5"></textarea>
                   </div>
                 </div>
                 <div class="modal-footer form-row mt-2">
-                  <button type="button" class="btn btn-secondary btn-sm mr-3"
-                    data-bs-toggle="modal"data-bs-dismiss="modal" data-bs-target="#loginModal">Login</button>
+                  <button type="button" class="btn btn-secondary btn-sm mr-3" data-bs-toggle="modal"
+                    data-bs-dismiss="modal" data-bs-target="#loginModal">Login</button>
                   <button type="button" class="btn btn-secondary btn-sm ml-auto" data-bs-dismiss="modal">Cancel</button>
                   <button type="submit" class="btn btn-light btn-sm ml-1">Submit</button>
                 </div>
@@ -238,260 +251,270 @@
     </div>
     <!--END OF AFFILIATE MODAL-->
     <!--END OF NAVBAR-->
-    </header>
-    <!-- MAIN CAROUSEL -->
-    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style="border: 2px solid rgba(0, 0, 0, .8);">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#mainCarousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#mainCarousel" data-bs-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner text-center" style="max-height: 400px;">
-        <div class="carousel-item active" style="max-height: 400px;">
-          <a href="#">
-            <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-william-choquette-1954524.jpg">
-            <div class="carousel-caption">
-              <h5>Build A Workout</h5>
-              <p>Take the guesswork out of fitness and easily make a workout plan. 
-                Target all muscle groups without cracking open a textbook.</p>
-            </div>
-          </a>
-        </div>
-        <div class="carousel-item" style="max-height: 400px;">
-          <a href="#">
-            <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-maarten-van-den-heuvel-4254902.jpg">
-            <div class="carousel-caption">
-              <h5>Find A Gym</h5>
-              <p>Take full advantage of state-of-the-art equipment while staying within your budget
-                 at a gym near you.</p>
-            </div>
-          </a>
-        </div>
-        <div class="carousel-item" style="max-height: 400px;">
-          <a href="#">
-            <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-julia-larson-6455823.jpg">
-            <div class="carousel-caption">
-              <h5>Match With A Trainer</h5>
-              <p>Take the guesswork out of fitness and easily make a workout plan. 
-                Target all muscle groups without cracking open a textbook.</p>
-            </div>
-          </a>
-        </div>
+  </header>
+  <!-- MAIN CAROUSEL -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style="border: 2px solid rgba(0, 0, 0, .8);">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#mainCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#mainCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner text-center" style="max-height: 400px;">
+      <div class="carousel-item active" style="max-height: 400px;">
+        <a href="#">
+          <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-william-choquette-1954524.jpg">
+          <div class="carousel-caption">
+            <h5>Build A Workout</h5>
+            <p>Take the guesswork out of fitness and easily make a workout plan.
+              Target all muscle groups without cracking open a textbook.</p>
+          </div>
+        </a>
       </div>
-      <!-- CAROUSEL CONTROLS-->
-      <a class="carousel-control-prev" href="#mainCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#mainCarousel" role="button" data-bs-slide="next">
-        <span class="sr-only">Next</span>
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
+      <div class="carousel-item" style="max-height: 400px;">
+        <a href="#">
+          <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-maarten-van-den-heuvel-4254902.jpg">
+          <div class="carousel-caption">
+            <h5>Find A Gym</h5>
+            <p>Take full advantage of state-of-the-art equipment while staying within your budget
+              at a gym near you.</p>
+          </div>
+        </a>
+      </div>
+      <div class="carousel-item" style="max-height: 400px;">
+        <a href="#">
+          <img class="d-block w-100" style="object-fit: cover;" src="img/pexels-julia-larson-6455823.jpg">
+          <div class="carousel-caption">
+            <h5>Match With A Trainer</h5>
+            <p>Take the guesswork out of fitness and easily make a workout plan.
+              Target all muscle groups without cracking open a textbook.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- CAROUSEL CONTROLS-->
+    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#mainCarousel" role="button" data-bs-slide="next">
+      <span class="sr-only">Next</span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+    <div class="row">
+
+    </div>
+  </div>
+  <!-- END OF MAIN CAROUSEL -->
+  <!-- HOW IT WORKS -->
+  <!-- CORRECT: VERTICAL ALIGN TEXT IN ROWS-->
+  <div style="background-image: url('/img/pexels-lee-catherine-collins-2652236.jpg'); background-size: cover;">
+    <div class="tint-layer" style="color: black; border: 2px solid rgba(0, 0, 0, .8);">
       <div class="row">
-
-      </div>
-    </div>
-    <!-- END OF MAIN CAROUSEL -->
-    <!-- HOW IT WORKS -->
-    <!-- CORRECT: VERTICAL ALIGN TEXT IN ROWS-->
-    <div style="background-image: url('/img/pexels-lee-catherine-collins-2652236.jpg'); background-size: cover;">
-      <div class="tint-layer" style="color: black; border: 2px solid rgba(0, 0, 0, .8);">
-        <div class="row">
-          <div class="col px-5 tint-layer" style="padding-top: 10px;">
-            <h1>How It Works</h1>
-          </div>
-        </div>
-        <div>
-          <div class="row row-content">
-            <div class="col-4 col-lg-3 content-center">
-              <img class="content-img d-block" src="img/start-line.svg" style="max-height: 200px;">
-            </div>
-            <div class="col">
-              <div class="d-block light-textbg">
-                <div style="text-align: left;">
-                  <h2>Build Your Workout</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
-                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
-                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
-                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
-                    ligula, non ultrices tellus sollicitudin et.</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="row row-content">
-            <div class="col">
-              <div class="d-block light-textbg">
-                <div style="text-align: right;">
-                  <h2>Make Your Schedule</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
-                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
-                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
-                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
-                  ligula, non ultrices tellus sollicitudin et.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 col-lg-3 content-center">
-              <img class="content-img d-block" src="img/calendar.svg" style="max-height: 200px;">
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="row row-content">
-            <div class="col-4 col-lg-3 content-center">
-              <img class="content-img d-block" src="img/gym.svg" style="max-height: 200px;">
-            </div>
-            <div class="col">
-              <div class="d-block light-textbg">
-                <div style="text-align: left;">
-                  <h2>Choose Your Gym</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
-                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
-                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
-                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
-                    ligula, non ultrices tellus sollicitudin et.</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="row row-content">
-            <div class="col">
-              <div class="d-block light-textbg">
-                <div style="text-align: right;">
-                  <h2>Match With A Trainer</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
-                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
-                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
-                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
-                  ligula, non ultrices tellus sollicitudin et.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 col-lg-3 content-center">
-              <img class="content-img d-block" src="img/coach.svg" style="max-height: 200px;">
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="row row-content">
-            <div class="col-4 col-lg-3 content-center">
-              <img class="content-img d-block" src="img/shoes.svg" style="max-height: 200px;">
-            </div>
-            <div class="col">
-              <div class="d-block light-textbg">
-                <div style="text-align: left;">
-                  <h2>Work Hard; Work Out Harder </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
-                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
-                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
-                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
-                    ligula, non ultrices tellus sollicitudin et.</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="row row-content">
-            <div class="col">
-              <div class="d-block light-textbg">
-                <div style="text-align: right;">
-                  <h2>Track Your Progress</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
-                    amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi 
-                    sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum 
-                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien 
-                  ligula, non ultrices tellus sollicitudin et.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 col-lg-3 content-center">
-              <img class="content-img d-block" src="img/growth.svg" style="max-height: 200px;">
-            </div>
-          </div>
+        <div class="col px-5 tint-layer" style="padding-top: 10px;">
+          <h1>How It Works</h1>
         </div>
       </div>
-    </div>
-    <!-- END OF HOW IT WORKS -->
-    </body>
-    <footer class="footer-bg">
-      <!-- ICON CREDITS-->
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-8 my-1 ml-3 py-2">
-            <a href="#">
-              <img src="img/dumbbell.svg" class="mb-2" style="height: 30px; width: 30x;">
-              <span class="heading-text" style="color: white; font-size: 24px;">Workout Builder</span>
-            </a>
-          </div>
-          <div class="col content-center pr-0">
-            <button class="btn btn-sm btn-light my-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-              Login/Sign Up
-            </button>
-          </div>
-          <div class="col content-center px-0">
-            <button class="btn btn-sm btn-light my-2" data-bs-target="#clientModal" data-bs-toggle="modal">
-              For Clients
-            </button>
-          </div>
-        </div>
-        <div class="row m-1"></div>
-          <div class="col heading-text content-center" style="color: white;">
-            <h5>Contact Us</h5>
-          </div>
-        </div>
-        <div class="row m-1">
-          <div class="col" style="color: white;">
-            <!-- PHONE -->
-            <div class="row content-center">
-              <img src="img/phone-call.svg"  style="height: 30px; width: 30px;">
-            </div>
-            <div class="row content-center">
-              <p style="font-weight: bolder;">1-800-555-1234</p>
-            </div>
-          </div>
-          <div class="col" style="color: white;">
-            <!-- EMAIL -->
-            <div class="row content-center">
-              <img src="img/email.svg"  style="height: 30px; width: 30px;">
-            </div>
-            <div class="row content-center">
-              <span style="font-weight: bolder;">workoutbuilder</span>
-              <span style="font-weight: bolder;">@fakemail.com</span>
-            </div>
-          </div>
-          <div class="col" style="color: white;">
-            <!-- SOCIAL MEDIA -->
-            <div class="row content-center">
-              <a href="#"><img src="img/facebook.svg"  style="height: 30px; width: 30px;"></a>
-              <a href="#"><img src="img/twitter.svg"  style="height: 30px; width: 30px;"></a>
-              <a href="#"><img src="img/instagram.svg"  style="height: 30px; width: 30px;"></a>
-              <a href="#"><img src="img/pinterest.svg"  style="height: 30px; width: 30px;"></a>
-              <a href="#"><img src="img/youtube.svg"  style="height: 30px; width: 30px;"></a>
-            </div>
-            <div class="row content-center">
-              <p style="font-weight: bolder;">@WorkoutBuilder</p>
-            </div>
-          </div>
-        </div>
       <div>
-        <p class="footer-finePrint">
-          Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
-          Icons made by <a href="" title="bqlqn">bqlqn</a> 
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
-          Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a>
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
-          Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
-          Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> 
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
-          Icons made by <a href="http://www.creaticca.com/" title="Creaticca Creative Agency">Creaticca Creative Agency</a> 
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
-          Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> 
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </p>
+        <div class="row row-content">
+          <div class="col-4 col-lg-3 content-center">
+            <img class="content-img d-block" src="img/start-line.svg" style="max-height: 200px;">
+          </div>
+          <div class="col">
+            <div class="d-block light-textbg">
+              <div style="text-align: left;">
+                <h2>Build Your Workout</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                  amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi
+                  sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum
+                  primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien
+                  ligula, non ultrices tellus sollicitudin et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-content">
+          <div class="col">
+            <div class="d-block light-textbg">
+              <div style="text-align: right;">
+                <h2>Make Your Schedule</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                  amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi
+                  sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum
+                  primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien
+                  ligula, non ultrices tellus sollicitudin et.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-3 content-center">
+            <img class="content-img d-block" src="img/calendar.svg" style="max-height: 200px;">
+          </div>
+        </div>
       </div>
-      <!-- END OF ICON CREDITS-->
-    </footer>
+      <div>
+        <div class="row row-content">
+          <div class="col-4 col-lg-3 content-center">
+            <img class="content-img d-block" src="img/gym.svg" style="max-height: 200px;">
+          </div>
+          <div class="col">
+            <div class="d-block light-textbg">
+              <div style="text-align: left;">
+                <h2>Choose Your Gym</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                  amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi
+                  sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum
+                  primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien
+                  ligula, non ultrices tellus sollicitudin et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-content">
+          <div class="col">
+            <div class="d-block light-textbg">
+              <div style="text-align: right;">
+                <h2>Match With A Trainer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                  amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi
+                  sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum
+                  primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien
+                  ligula, non ultrices tellus sollicitudin et.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-3 content-center">
+            <img class="content-img d-block" src="img/coach.svg" style="max-height: 200px;">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row row-content">
+          <div class="col-4 col-lg-3 content-center">
+            <img class="content-img d-block" src="img/shoes.svg" style="max-height: 200px;">
+          </div>
+          <div class="col">
+            <div class="d-block light-textbg">
+              <div style="text-align: left;">
+                <h2>Work Hard; Work Out Harder </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                  amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi
+                  sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum
+                  primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien
+                  ligula, non ultrices tellus sollicitudin et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-content">
+          <div class="col">
+            <div class="d-block light-textbg">
+              <div style="text-align: right;">
+                <h2>Track Your Progress</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis felis sit
+                  amet ligula mattis, sit amet congue purus ultrices. Maecenas mattis tempus arcu. Morbi
+                  sollicitudin neque ultricies, malesuada lorem at, tristique lectus. Vestibulum ante ipsum
+                  primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sodales sapien
+                  ligula, non ultrices tellus sollicitudin et.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-3 content-center">
+            <img class="content-img d-block" src="img/growth.svg" style="max-height: 200px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF HOW IT WORKS -->
+</body>
+<footer class="footer-bg">
+  <!-- ICON CREDITS-->
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-8 my-1 ml-3 py-2">
+      <a href="#">
+        <img src="img/dumbbell.svg" class="mb-2" style="height: 30px; width: 30x;">
+        <span class="heading-text" style="color: white; font-size: 24px;">Workout Builder</span>
+      </a>
+    </div>
+    <div class="col content-center pr-0">
+      <button class="btn btn-sm btn-light my-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Login/Sign Up
+      </button>
+    </div>
+    <div class="col content-center px-0">
+      <button class="btn btn-sm btn-light my-2" data-bs-target="#clientModal" data-bs-toggle="modal">
+        For Clients
+      </button>
+    </div>
+  </div>
+  <!-- Contact Us Header -->
+  <div class="row m-1"></div>
+  <div class="col heading-text content-center" style="color: white;">
+    <h5>Contact Us</h5>
+  </div>
+  </div>
+  <!-- Contact Us Details -->
+  <div class="row m-1">
+    <!-- PHONE -->
+    <div class="col" style="color: white;">
+      <div class="row content-center">
+        <img src="img/phone-call.svg" style="height: 50px; width: 50px;">
+      </div>
+      <div class="row">
+        <p class="text-center" style="font-weight: bolder;">1-800-555-1234</p>
+      </div>
+    </div>
+    <!-- EMAIL -->
+    <div class="col" style="color: white;">
+      <div class="row content-center">
+        <img src="img/email.svg" style="height: 50px; width: 50px;">
+      </div>
+      <div class="rowr">
+        <p class="text-center" style="font-weight: bolder;">workoutbuilder@fakemail.com</p>
+      </div>
+    </div>
+    <!-- SOCIAL MEDIA -->
+    <div class="col" style="color: white;">
+      <div class="row content-center">
+        <span>
+          <img src="img/fb.png" style="height:30px; width:30px;">
+          <img src="img/tw.png" style="height:30px; width:30px;">
+          <img src="img/ig.png" style="height:30px; width:30px;">
+          <img src="img/pinterest.png" style="height:30px; width:30px;">
+          <img src="img/youtube.png" style="height:30px; width:30px;">
+        </span>
+        <!-- <span>
+              <img src="img/facebook.svg"  style="height:30px; width:30px;">
+              <img src="img/twitter.svg"  style="height:30px; width:30px;">
+              <img src="img/instagram.svg"  style="height:30px; width:30px;">
+              <img src="img/pinterest.svg"  style="height:30px; width:30px;">
+              <img src="img/youtube.svg"  style="height:30px; width:30px;">
+              </span> -->
 
-  </body>
+      </div>
+      <div class="row">
+        <p class="text-center" style="font-weight: bolder;">@WorkoutBuilder</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="footer-finePrint">
+      Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+      Icons made by <a href="" title="bqlqn">bqlqn</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+      Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+      Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+      Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+      Icons made by <a href="https://www.creaticca.com/" title="Creaticca Creative Agency">Creaticca Creative Agency</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></br>
+      Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </p>
+  </div>
+  <!-- END OF ICON CREDITS-->
+</footer>
+</body>
 </html>
