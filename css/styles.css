@@ -6,12 +6,6 @@ h1, h2, h3, .heading-text {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.brand-title {
-  color: #3c908e;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: xx-large;
-}
-
 .header-bg {
   margin: 0;
   padding: 10px;
@@ -51,9 +45,18 @@ h1, h2, h3, .heading-text {
   font-size: 100%;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .text-center{
   text-align: center;
 }
+
 .right {
   float: right;
 }
@@ -104,3 +107,10 @@ h1, h2, h3, .heading-text {
 .nav-tabs li {
   background-image: linear-gradient(to bottom, #b6e69e, #fff, #fff, #fff);
 }
+
+.brand-title {
+  color: #3c908e;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: xx-large;
+}
+
